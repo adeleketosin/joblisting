@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(180, 31%, 88%);
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.con {
+  margin-top: 3rem;
+}
+
+.logoreact {
+  top: 5px;
+  background-color: hsl(180, 29%, 50%);
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.figure {
+  display: flex;
+  width: 70rem;
+  height: 8rem;
+  margin-left: 5rem;
+  background-color: hsl(180, 52%, 96%);
+  border-radius: 5px;
+}
+
+.insidecon {
+  background-color: hsl(180, 29%, 50%);
+  width: 6px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.photosnap {
+  margin-top: .9rem;
+  margin-left: 1.5rem;
+  height: 6rem;
+}
+
+.acctbtn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+.actbtn {
+  height: 40px;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(180, 31%, 88%);
+  color: hsl(180, 29%, 50%);
+  margin-top: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 8px 12px;
+
+}
+
+.actbtn:hover {
+  background-color: hsl(180, 29%, 50%);
+  color: white;
+  cursor: pointer;
+}
+
+.writeup {
+  margin-left: 40px;
+  margin-top: 15px;
+}
+
+.days {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.dev {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.btnnsfeature {
+  margin-left: 9rem;
+  margin-top: 3rem;
+  display: flex;
+  border: none;
+  cursor: pointer;
+}
+
+.btnns {
+  margin-left: 13rem;
+  margin-top: 3rem;
+  display: flex;
+  border: none;
+  cursor: pointer;
+}
+
+.new {
+  background-color: hsl(180, 29%, 50%);
+  height: 30px;
+  color: white;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.details {
+  display: flex;
+}
+
+.filter-buttons {
+  display: flex;
+  background-color: hsl(180, 52%, 96%);
+  height: 100px;
+  width: 48rem;
+  margin-left: 25rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.filterbtn {
+  height: 40px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(180, 31%, 88%);
+  color: hsl(180, 29%, 50%);
+  margin-left: 3.5rem;
+  cursor: pointer;
+}
+
+.filterbtn:hover {
+  background-color: hsl(180, 29%, 50%);
+  color: white;
+  cursor: pointer;
+}
+
+.Feature {
+  background-color: black;
+  height: 30px;
+  color: white;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.part {
+  margin-left: 15px;
+}
+
+.usa {
+  margin-left: 15px;
+}
+
+.accounttext {
+  font-weight: bold;
+  color: hsl(180, 29%, 50%);
+}
+
+
+/* MOBILE VERSION */
+@media (max-width: 480px) {
+
+  .figure {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1rem;
+    align-items: flex-start;
+    padding-top: 2.5rem;
+    position: relative;
+    border-left: 6px solid hsl(180, 29%, 50%);
+  }
+
+  .photosnap {
+    height: 60px;
+    margin: 0;
+    position: absolute;
+    top: -30px;
+    left: 20px;
+  }
+
+  .insidecon {
+    height: 100%;
+    left: 0;
+  }
+
+  .writeup {
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .days {
+    gap: 15px;
+    font-size: 14px;
+  }
+
+  .acctbtn {
+    display: flex;
+    width: 100%;
+    margin-left: 20px;
+    padding-left: 20px;
+    margin-top: 15px;
+    gap: 10px;
+  }
+
+  .actbtn {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .filter-buttons {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .filterbtn {
+    margin: 0;
+    width: 100px;
+  }
+
+  /* .figure {
+    border-left: 6px solid hsl(180, 29%, 50%);
+  } */
+
+}
+
+
+/* TABLET VERSION */
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .figure {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .filter-buttons {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .acctbtn {
+    margin-left: 2rem;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .actbtn {
+    margin-left: 10px !important;
+  }
+
+}
